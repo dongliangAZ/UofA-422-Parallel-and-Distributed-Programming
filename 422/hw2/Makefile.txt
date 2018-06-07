@@ -1,0 +1,16 @@
+.PHONY : all clean
+
+
+all:    JacobiJava JacobiC
+
+
+JacobiJava: Jacobi.java
+	javac Jacobi.java
+	
+
+JacobiC:  Jacobi.c
+	gcc Jacobi.c -std=gnu99 -Wall -lpthread -o JacobiC
+
+
+clean: 
+	rm -rf Jacobi.o JacobiC *.class

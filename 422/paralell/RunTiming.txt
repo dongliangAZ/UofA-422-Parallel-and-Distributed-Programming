@@ -1,0 +1,19 @@
+#! /bin/bash
+
+if [[  ! -f Run.class  ]]
+then 
+	echo "cannot find the file Run.class"
+	exit 1
+fi
+
+
+
+	for j in 2 4 8 16 32
+	do 
+		java Run $j 100 10 1000
+		echo "======================\n"	
+	done	
+	echo "*******************************\n"
+
+
+echo "---------------------------------"

@@ -1,0 +1,11 @@
+.PHONY: all clean
+
+all: collisions
+
+collisions: 
+	javac *.java
+
+
+	
+clean:
+	rm -r *.class

@@ -1,0 +1,6 @@
+Barber: 
+	javac Barber.java
+
+
+clean:
+	rm *class

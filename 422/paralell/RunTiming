@@ -1,0 +1,20 @@
+#! /bin/bash
+
+if [[  ! -f controller/Run.class  ]]
+then 
+	echo "cannot find the file Run.class"
+	exit 1
+fi
+
+
+for i in 10 100 1000
+	do
+	for j in 2 4 8 16 32
+	do 
+		java controller.Run $j $i 10 1000
+		echo "======================"	
+	done	
+	echo "*******************************\n"
+done
+
+echo "---------------------------------"
